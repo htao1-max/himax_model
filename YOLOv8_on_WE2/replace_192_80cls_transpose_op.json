@@ -1,0 +1,65 @@
+{
+    "format_version": 1,
+    "operations": [
+      {
+        "op_name": "/model.22/Reshape",
+        "param_target": "inputs",
+        "param_name": "/model.22/cv2.0/cv2.0.2/Conv_output_0",
+        "pre_process_transpose_perm": [0,2,3,1]
+      },
+      {
+        "op_name": "/model.22/Reshape",
+        "param_target": "inputs",
+        "param_name": "/model.22/Constant_output_0",
+        "values": [1, 576, 66]
+      },
+      {
+        "op_name": "/model.22/Reshape_1",
+        "param_target": "inputs",
+        "param_name": "/model.22/cv2.1/cv2.1.2/Conv_output_0",
+        "pre_process_transpose_perm": [0,2,3,1]
+      },
+      {
+        "op_name": "/model.22/Reshape_1",
+        "param_target": "inputs",
+        "param_name": "/model.22/Constant_output_0",
+        "values": [1, 144, 66]
+      },
+      {
+        "op_name": "/model.22/Reshape_2",
+        "param_target": "inputs",
+        "param_name": "/model.22/cv2.2/cv2.2.2/Conv_output_0",
+        "pre_process_transpose_perm": [0,2,3,1]
+      },
+      {
+        "op_name": "/model.22/Reshape_2",
+        "param_target": "inputs",
+        "param_name": "/model.22/Constant_output_0",
+        "values": [1, 36, 66]
+      },
+      {
+        "op_name": "/model.22/Concat",
+        "param_target": "attributes",
+        "param_name": "axis",
+        "values": 1
+      },
+      {
+        "op_name": "/model.22/dfl/Reshape",
+        "param_target": "inputs",
+        "param_name": "/model.22/Concat_output_0",
+        "pre_process_transpose_perm": [0,2,1]
+      },
+      {
+        "op_name": "/model.22/dfl/Reshape",
+        "param_target": "inputs",
+        "param_name": "/model.22/dfl/Constant_output_0",
+        "values": [1, 756, 4, 16]
+      },
+      {
+        "op_name": "/model.22/dfl/Transpose",
+        "param_target": "attributes",
+        "param_name": "perm",
+        "values": [0,2,1,3]
+      }
+    ]
+  }

@@ -1,0 +1,43 @@
+# Virtual environments (yours specifically)
+himax_venv/
+yolov8_env/
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Large datasets and archives — NEVER commit
+*.zip
+*.tar
+*.tar.gz
+Ring.yolov8/
+
+# Model files (consider Git LFS if you need to version these)
+*.pt
+*.onnx
+*.tflite
+*.h5
+*.pb
+saved_model/
+*_saved_model/
+
+# Training data / calibration
+*.npy
+
+# Videos and large media
+*.mp4
+*.mov
+*.avi
+
+# Editor backup files
+*~
+.*~
+
+# Secrets / env
+.env
+
+# OS
+.DS_Store
