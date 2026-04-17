@@ -50,8 +50,10 @@ writer = cv2.VideoWriter(OUTPUT, fourcc, fps, (width, height))
 
 # ── Colours per class (BGR) ──────────────────────────────────
 colors = {
-    0: (0, 255, 0),   # green  – class 0
-    1: (0, 120, 255),  # orange – class 1
+    0: (0, 255, 0),    # green  – TORPEDO_BOARD
+    1: (0, 120, 255),  # orange – Shark_torpedo_circle
+    2: (255, 0, 0),    # blue   – Sawfish_torpedo_circle
+    3: (0, 0, 255),    # red    – red_circle
 }
 
 # ── Frame loop ───────────────────────────────────────────────
